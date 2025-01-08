@@ -88,6 +88,7 @@ button:hover {
 #pulseaudio,
 #wireplumber,
 #custom-media,
+#custom-power,
 #tray,
 #mode,
 #idle_inhibitor,
@@ -241,13 +242,17 @@ label:focus {
 }
 
 #bluetooth {
-   background-color: #c3e7fc;
-   color: #000000;
-   padding: 0 10px;
+    background-color: #c3e7fc;
+    color: #000000;
+    padding: 0 10px;
 }
 
 #bluetooth.disabled {
-   background-color: #fcc3c3;
+    background-color: #fcc3c3;
+}
+
+#custom-power{
+    padding: 0 10px;
 }
 
 #tray {

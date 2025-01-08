@@ -19,7 +19,8 @@
         "sway/language",
 	    "cpu",
 	    "network",
-	    "bluetooth"
+	    "bluetooth",
+	    "custom/power"
         // "tray"
     ],
     // Modules configuration
@@ -206,8 +207,7 @@
 		"menu-actions": {
 			"shutdown": "shutdown",
 			"reboot": "reboot",
-			"suspend": "systemctl suspend",
-			"hibernate": "systemctl hibernate"
+			"lock": "swaylock"
 		}
     }
 }
