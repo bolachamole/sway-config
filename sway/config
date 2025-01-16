@@ -31,7 +31,7 @@ set $menu $rofi_cmd -show combi -combi-modes drun#run -modes combi
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
 # Requires: desktop-backgrounds-compat, swaybg
-output * bg /home/g/Imagens/Capturas\ de\ tela/'Captura de tela de 2024-08-26 15-18-34.png' fill
+output * bg /home/g/Imagens/Prints/'Captura de tela de 2024-08-26 15-18-34.png' fill
 #
 # Example configuration:
 #
@@ -209,6 +209,11 @@ mode "resize" {
     bindsym Escape mode "default"
 }
 bindsym $mod+r mode "resize"
+
+#
+# Screenshots
+#
+bindsym $mod+print exec slurp | grim -g - $(xdg-user-dir PICTURES)/Prints/$(date +'screenshot_%Y-%m-%d-%H%M%S.png')
 
 # Include configs from 3 locations:
 #  - /usr/share/sway/config.d

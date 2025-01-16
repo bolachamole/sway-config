@@ -49,6 +49,9 @@
             "unlocked": ""
         }
     },
+    "sway/language":{
+        "tooltip": false
+    },
     "sway/mode": {
         "format": "<span style=\"italic\">{}</span>"
     },
@@ -107,12 +110,10 @@
     },
     "clock": {
         "timezone": "Brazil/Manaus",
-        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-        "format-alt": "{:%Y-%m-%d}"
+        "tooltip-format": "<big>{:%d/%m/%Y}</big>\n<tt><small>{calendar}</small></tt>"
     },
     "cpu": {
-        "format": "{usage}% ",
-        "tooltip": false
+        "format": "{usage}% "
     },
     "memory": {
         "format": "{}% "
