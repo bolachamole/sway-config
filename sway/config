@@ -215,6 +215,11 @@ bindsym $mod+r mode "resize"
 #
 bindsym $mod+print exec slurp | grim -g - $(xdg-user-dir PICTURES)/Prints/$(date +'Captura_%Y-%m-%d-%H%M%S.png')
 
+#
+# Emojis
+#
+bindsym $mod+period exec bemoji
+
 # Include configs from 3 locations:
 #  - /usr/share/sway/config.d
 #  - /etc/sway/config.d
