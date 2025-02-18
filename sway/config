@@ -213,7 +213,7 @@ bindsym $mod+r mode "resize"
 #
 # Screenshots
 #
-bindsym $mod+print exec slurp | grim -g - $(xdg-user-dir PICTURES)/Prints/$(date +'Captura_%Y-%m-%d-%H%M%S.png')
+bindsym $mod+print exec ~/.config/sway/print_menu.sh
 
 #
 # Emojis
