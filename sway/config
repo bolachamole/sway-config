@@ -31,7 +31,7 @@ set $menu $rofi_cmd -show combi -combi-modes drun#run -modes combi
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
 # Requires: desktop-backgrounds-compat, swaybg
-output * bg /home/g/Imagens/Prints/'Captura de tela de 2024-08-26 15-18-34.png' fill
+output * bg $(xdg-user-dir PICTURES)/Desenhos/'cavalas.png' fill
 #
 # Example configuration:
 #
@@ -218,7 +218,7 @@ bindsym $mod+print exec ~/.config/sway/print_menu.sh
 #
 # Emojis
 #
-bindsym $mod+period exec bemoji
+bindsym $mod+period exec bemoji -t
 
 # Include configs from 3 locations:
 #  - /usr/share/sway/config.d

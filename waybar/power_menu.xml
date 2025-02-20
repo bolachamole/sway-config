@@ -7,16 +7,16 @@
       </object>
 	  </child>
     <child>
-	    <object class="GtkMenuItem" id="hibernate">
-		    <property name="label">Hibernate</property>
+	    <object class="GtkMenuItem" id="suspend">
+		    <property name="label">Suspend</property>
       </object>
     </child>
     <child>
       <object class="GtkSeparatorMenuItem" id="delimiter1"/>
     </child>	
     <child>
-      <object class="GtkMenuItem" id="shutdown">
-			  <property name="label">Shutdown in 1 min.</property>
+      <object class="GtkMenuItem" id="poweroff">
+			  <property name="label">Power Off</property>
       </object>
     </child>
     <child>
