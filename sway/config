@@ -70,7 +70,7 @@ workspace 6 output eDP-1
 # Teclados:
 input type:keyboard {
     xkb_layout br,us
-    xkb_options grp:win_space_toggle
+    xkb_options grp:rwin_toggle
 }
 
 ### Key bindings
