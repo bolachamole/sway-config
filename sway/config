@@ -31,7 +31,7 @@ set $menu $rofi_cmd -show combi -combi-modes drun#run -modes combi
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
 # Requires: desktop-backgrounds-compat, swaybg
-output * bg $(xdg-user-dir PICTURES)/Desenhos/'cavalas.png' fill
+output * bg /usr/share/backgrounds/default.png fill
 #
 # Example configuration:
 #
@@ -69,7 +69,7 @@ workspace 6 output eDP-1
 #
 # Teclados:
 input type:keyboard {
-    xkb_layout br,us
+    xkb_layout br
     xkb_options grp:rwin_toggle
 }
 

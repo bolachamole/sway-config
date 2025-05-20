@@ -28,13 +28,7 @@
         "format-full": "{capacity}% {icon}",
         "format-charging": "{capacity}% ",
         "format-plugged": "{capacity}% ",
-        "format-alt": "{time} {icon}",
-        // "format-good": "", // An empty format will hide the module
-        // "format-full": "",
         "format-icons": ["", "", "", "", ""]
-    },
-    "battery#bat2": {
-        "bat": "BAT2"
     },
     "bluetooth":{
         "format-on": "On ",
@@ -53,13 +47,15 @@
         "format": "{usage}% "
     },
     "custom/power": {
-        "format" : "⏻",
+        "format" : "",
 		"tooltip": false,
 		"menu": "on-click",
 		"menu-file": "$HOME/.config/waybar/power_menu.xml", // Menu file in resources folder
 		"menu-actions": {
+            "launcher": "rofi -show combi -combi-modes drun#run -modes combi",
 			"lock": "swaylock",
 			"suspend": "systemctl suspend",
+            "hibernate": "systemctl hibernate",
 			"poweroff": "systemctl poweroff",
 			"reboot": "reboot"
 		}
