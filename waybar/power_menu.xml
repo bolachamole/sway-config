@@ -20,6 +20,9 @@
       </object>
     </child>
     <child>
+      <object class="GtkSeparatorMenuItem" id="delimiter1"/>
+    </child>
+    <child>
       <object class="GtkMenuItem" id="hibernate">
 			  <property name="label">Hibernate</property>
       </object>
