@@ -31,7 +31,7 @@ set $menu $rofi_cmd -show combi -combi-modes drun#run -modes combi
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
 # Requires: desktop-backgrounds-compat, swaybg
-output * bg /usr/share/backgrounds/default.png fill
+output * bg $(xdg-user-dir PICTURES)/Desenhos/'cavalas.png' fill
 #
 # Example configuration:
 #
@@ -212,14 +212,20 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 #
+# Style
+#
+    # Tecla para mudar a borda das janelas
+    bindsym $mod+Shift+b border toggle
+
+#
 # Screenshots
 #
-bindsym $mod+print exec ~/.config/sway/print_menu.sh
+    bindsym $mod+print exec ~/.config/sway/print_menu.sh
 
 #
 # Emojis
 #
-bindsym $mod+period exec bemoji -t
+    bindsym $mod+period exec bemoji -t
 
 # Include configs from 3 locations:
 #  - /usr/share/sway/config.d
