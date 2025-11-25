@@ -9,3 +9,6 @@ vim.diagnostic.config({
 	signs = true,
 	underline = true,
 })
+
+vim.g.sonokai_style = 'atlantis'
+vim.cmd.colorscheme('sonokai')

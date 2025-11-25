@@ -31,14 +31,13 @@ set $menu $rofi_cmd -show combi -combi-modes drun#run -modes combi
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
 # Requires: desktop-backgrounds-compat, swaybg
-output * bg $(xdg-user-dir PICTURES)/fundos/'fundo1.jpg' fill
+output * bg $(xdg-user-dir PICTURES)/fundos/'fundo1.png' fill
 #
 # Example configuration:
 #
 #   output HDMI-A-1 resolution 1920x1080 position 1920,0
 #
 # You can get the names of your outputs by running: swaymsg -t get_outputs
-# workspace 6 output eDP-1
 
 ### Idle configuration
 #
@@ -216,6 +215,7 @@ bindsym $mod+r mode "resize"
 #
     # Tecla para mudar a borda das janelas
     bindsym $mod+Shift+b border toggle
+default_border pixel
 
 #
 # Screenshots
